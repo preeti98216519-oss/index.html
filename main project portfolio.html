@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link
+     href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+    rel="stylesheet"/>
+</head> 
+<style>
+   {
+      /mobile defaults/
+   }
+   @media(min-width:768px){
+      /tablet/desktop styles/
+   }
+   @media only screen and (max-width:600px) {
+      /mobile layout adjustments/
+      
+   }
+    *{
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+    }
+   body{
+    background-color: #111;
+    color: #fff;
+    font-family: 'segoe UI',
+    sans-serif;
+    box-shadow: inset 0 0 100px
+    rgba(255 ,60,0,0.2);
+   }
+     nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 40px;
+        background: #000;
+     }
+     .logo{
+        font-size: 24px;
+        font-weight: bold;
+        color: white;
+     }
+     nav ul {
+        display: flex;
+        list-style: none;
+     }
+     nav ul li {
+        margin-left: 30px;
+     }
+     nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-weight: 500;
+     }
+     .hero{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        padding: 80px 40px;
+        gap: 40px;
+        min-height: 100vh;
+     }
+     .hero img {
+        width: 500px;
+        height: 450px;
+        border-radius: 50%;
+        border:5px solid #444;
+        box-shadow: 0 0 20px  #ff3c00;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+     }
+     .left { max-width: 600px;}
+     .hero.content {
+        max-width: 600px;
+     }
+     .hero img:hover{
+      transform: scale(1.05);
+      box-shadow: 0 0 30px  #ff3c00, 0 0 60px  #ff3c00 ;
+     }
+     .hero h1{
+        font-size: 42px;
+     }
+     .her h1 span {
+        color: #ff3c00
+     }
+     .hero p {
+        margin-top: 15px;
+        font-size: 18px;
+     }
+     .btn{
+        display: inline-block;
+        margin-top: 20px;
+        padding: 10px 20px;
+        background: #ff3c00;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+     }
+     section.projects,section.contact{
+        padding: 60px 20px;
+        text-align: center;
+     }
+     .project-card {
+        background: #222;
+        padding: 20px;
+        margin:20px auto;
+        width: 90%;
+        max-width: 600px;
+        border-radius: 10px;
+     }
+     form{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        max-width: 400px;
+        margin:20px auto;
+     }
+     input,textarea{
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+     }
+     #form message{
+        margin-top: 10px;
+        color:lightgreen;
+     }
+     .skill-list{
+        max-width: 600px;
+        margin: 0 auto;
+        text-align: left;
+        font-size: 18px;
+        line-height: 2;
+     }
+     .section {
+      padding: 60px;
+      margin: 20px auto;
+      max-width: 900px;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(255 ,60,0,0.3);
+      transition: transform 0.3s ease;
+     }
+     .about{
+      background: #1a1a1a;
+      border-left: 5px solid #ff3c00;
+     }
+     .projects {
+      background: #222;
+      border-left: 5px solid #ff3c00;
+     }
+     .skills{
+      background: #1f1f1f;
+      border-left: 5px solid #ff3c00;
+     }
+     .contact{
+      background: #262626;
+      border-left: 5px solid #39ff14;
+     }
+     .section: hover{
+      transform:scale(1.02);
+     }
+     footer {
+        background: #000;
+        text-align: center;
+        padding: 20px;
+        color: #aaa;
+        margin-top: 40px;
+     }
+</style>
+</head>
+<body>
+    <nav>
+       <div class="logo">preeti</div>
+       <ul>
+        <li><a href="#home">home</a></li>
+        <li><a href="#about">about</a></li>
+        <li><a href="#skill">skill</a></li>
+        <li><a href="#portfolio">portfolio</a></li>
+        <li><a href="#contact">contact</a></li>
+       </ul>
+    </nav>
+    <div class="section about">home
+    <section id="home" class="hero">
+        <img src="imag.html/WhatsApp Image 2025-07-12 at 17.10.40_aaee29d6 what portfolio.jpg" alt="" data-aos="fade-right"/>
+        <div class="left" data-aos="fade- left">
+            <h1>Hi I AM <span>preeti</span></h1>
+            <P>sensible to forntend , passionate about building web experiences,creating beautiful and responsive websites </P>
+            <a href="#portfolio" class="btn"
+             data-aos="zoom-in">Explore work</a>
+        </div>
+    </section>  </div>
+
+<div class="section about">about me
+    <section id="about">
+        <h2 class="section-title"
+        data-aos="fade-up">About me </h2>
+        <p data-aos="fade-in"
+        style="max-width: 600px; 
+        margin:auto;">
+        I'm a self-taught web developer with a strong interest in creating user- friendly  and visually appealing websites. I enjoy building projects that help me improve and challenge my creativity.</p>
+    </section>
+    </div>
+    
+<div class="section skill"> skills
+    <section id="skills">
+        <h2 class="section-title"
+        data-aos="fade-up">my skills</h2>
+     <div class="skills-list"
+     data-aos="fade-in">
+     HTML5, CSS3, Javascript <br>
+     Responsive Web Design <br>
+     Git & GitHub <br>
+     Canva ,Figma (Basic UI Design) <br>
+     communication & Teamwork <br>
+    </div>
+
+    </section>
+    </div>
+    <div class="section projects">projects
+    <section id="portfolio" class="projects">
+        <h2 data-aos="fade-up">my projects</h2>
+        <div class="project-card" data-aos="flip-left">
+            <h3>TO-DO-App</h3>
+            <p>simple  tast manager using HTML,CSS,JS</p>
+        </div>
+        <div class="project-card" data-aos="flip-right">
+            <h3>game</h3>
+            <p>using js ,html,css</p>
+        </div>
+ </section>
+</div>
+<div class="section contact">contact
+ <section id="contact"
+  class="contact">
+    <h2 data-aos="fade-down">contact me </h2>
+    <form onsubmit="return handlesubmit(event)"
+    data-aos="fade-up">
+      <input type="text" id="name"
+      placeholder="your name" required />
+      <input type=" text" id="email"
+      placeholder="youremail"required/>
+      <textarea id="meaage"
+      placeholder="your message"required></textarea>
+      <button type="submit"
+       class="btn">send message</button>
+</form>
+ <p id="form message"></p>
+ </section>
+ </div>
+ <footer>
+    Made With by preeti |&copy; 2025
+ </footer>
+
+
+ <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+   AOS.init();
+    function handlesubmit(event) {
+        event.preventDefault();
+        const name =
+        document.getElementById("name").value;
+        const email=
+        document.etElementById("email").value;
+        const message=
+        document.getElementById("message").value;
+        if(name && email&& message){
+            document.getElementById("form message").textcontent= "message sent successfully!";
+            } else{
+            document.getElementById("form message").textcontent="please fill all fields.";
+        }
+        settimeout(()=> {
+            document.getElementById("formessage").textcontent="";
+        },4000);
+        return false;
+    }    
+   </script>
+</body>
+</html>
