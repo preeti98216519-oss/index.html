@@ -48,6 +48,28 @@
         font-weight: bold;
         color: white;
      }
+     .typewriter {
+  overflow: hidden;             
+  border-right: 2px solid orange; /* blinking cursor effect */
+  white-space: nowrap;         
+  letter-spacing: 2px solid orange;
+  animation: typing 3s steps(20, end), blink 0.75s step-end infinite;
+  animation-fill-mode: forwards;
+  width: 0;
+  font-size: 32px;
+  color:white;/*make sure text is visible*/
+ }
+
+/* Typing animation */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 15ch } /* adjust this as per your text lenght */
+}
+
+/* Cursor blink effect */
+@keyframes blink {
+  50% { border-color: transparent }
+}
      nav ul {
         display: flex;
         list-style: none;
@@ -71,11 +93,25 @@
      }
      .hero img {
         width: 500px;
-        height: 450px;
+        height: 500px;
         border-radius: 50%;
+        object-fit: cover;
+        object-position: top;
         border:5px solid #444;
         box-shadow: 0 0 20px  #ff3c00;
         transition: transform 0.3s ease, box-shadow 0.3s ease;
+     }
+     @media only screen and (max-width:600px){
+      .hero img{
+         width: 200px;
+         height: 200px;
+      }
+     }
+     @media (min-width:768px){
+      .hero img {
+         width:300px;
+         height:300px;
+      }
      }
      .left { max-width: 600px;}
      .hero.content {
@@ -190,13 +226,13 @@
     <div class="section about">home
     <section id="home" class="hero">
         <img src="imag.html/WhatsApp Image 2025-07-12 at 17.10.40_aaee29d6 what portfolio.jpg" alt="" data-aos="fade-right"/>
-        <div class="left" data-aos="fade- left">
-            <h1>Hi I AM <span>preeti</span></h1>
+        <div class= "left" data-aos="fade- left">
+            <h1 class="typewriter">Hi I AM <span>preeti</span></h1>
             <P>sensible to forntend , passionate about building web experiences,creating beautiful and responsive websites </P>
             <a href="#portfolio" class="btn"
              data-aos="zoom-in">Explore work</a>
         </div>
-    </section>  </div>
+    </section>  
 
 <div class="section about">about me
     <section id="about">
